@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuestas</title>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <h1>Máquina de Apuestas</h1>
+    <p>Tienes <span id="coins">50</span> monedas.</p>
+    <label for="numeroApuesta">Elige un número (1-6):</label>
+    <input type="number" id="numeroApuesta" min="1" max="6">
+    <br>
+    <label for="cantidadApostar">Cantidad de monedas a apostar:</label>
+    <input type="number" id="cantidadApostar" min="1">
+    <br>
+    <button onclick="play()">Apostar</button>
+
+    <div id="historialNumeros">
+        <h2>Historial de Números:</h2>
+        <ul id="numeroList"></ul>
+    </div>
+    </div>
+</body>
+</html>
